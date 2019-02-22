@@ -3,6 +3,11 @@ import Tabs from './Tabs';
 import Carousel from '../Carousel/Carousel';
 import Cards from './Cards';
 
+/*******
+ * Deployed @
+ * https://jb-lambdatimes-react.netlify.com/
+ *******/
+
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from '../../data';
 
