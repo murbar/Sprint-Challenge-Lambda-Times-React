@@ -46,10 +46,8 @@ export default class Content extends Component {
     */
     const { tabs, cards, selected } = this.state;
 
-    // let's check that the selected is a valid selection
-    if (tabs.includes(selected) && selected !== 'all') {
-      return cards.filter(c => c.tab === selected);
-    }
+    const validSelection = tabs.includes(selected) && selected !== 'all';
+    if (validSelection) return cards.filter(c => c.tab === selected);
     return cards;
   };
 
