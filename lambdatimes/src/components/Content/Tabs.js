@@ -21,5 +21,7 @@ const Tabs = ({ tabs, selectedTab, selectTabHandler }) => {
 export default Tabs;
 
 Tabs.propTypes = {
-  tabs: PropTypes.arrayOf(PropTypes.string)
+  tabs: PropTypes.arrayOf(PropTypes.string),
+  selectedTab: PropTypes.string,
+  selectTabHandler: PropTypes.func
 };
