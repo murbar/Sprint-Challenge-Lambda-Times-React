@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Card from './Card';
 
-const Cards = props => {
+const Cards = ({ cards }) => {
   return (
     <div className="cards-container">
       {/* Using the cards prop, map over the list creating a 
           new Card component for each passing the card as the only prop*/}
+      {cards.map(c => (
+        <Card key={c.headline} card={c} />
+      ))}
     </div>
   );
 };
